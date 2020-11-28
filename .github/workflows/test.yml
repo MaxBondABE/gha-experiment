@@ -5,5 +5,11 @@ jobs:
     name: Run the experiment
     runs-on: ubuntu-latest
     steps:
-      - name: Echo
-        run: echo test
+        uses: actions/checkout@v2
+      - name: Run test suit
+        uses: action-rs/toolchain@v1
+        with:
+          toolchain: stable
+        uses: action-rs/cargo@v1
+        with:
+          command: test
