@@ -1,5 +1,6 @@
 name: GHA Experiment
 on: push
 jobs:
-  steps:
-    run: echo test
+  experiment:
+    steps:
+      run: echo test
