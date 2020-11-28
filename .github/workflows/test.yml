@@ -2,5 +2,8 @@ name: GHA Experiment
 on: push
 jobs:
   experiment:
+    name: Run the experiment
+    runs-on: ubuntu-latest
     steps:
-      run: echo test
+      - name: Echo
+        run: echo test
