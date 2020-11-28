@@ -7,10 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup toolchain
-        uses: action-rs/toolchain@v1
+        uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
       - name: Run cargo test
-        uses: action-rs/cargo@v1
+        uses: actions-rs/cargo@v1
         with:
           command: test
